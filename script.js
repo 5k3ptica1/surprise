@@ -56,25 +56,41 @@ function displayCat() {
     };
 }
 
-// Function to display the cat-heart.gif
 function displayCatHeart() {
     // Clear existing content in the image container
     document.getElementById('image-container').innerHTML = '';
+
     // Get the container where the image will be displayed
     var imageContainer = document.getElementById('image-container');
+
     // Create a new Image element for the cat-heart
     var catHeartImage = new Image();
-    // Set the source (file path) for the cat-heart image
     catHeartImage.src = 'cat-heart.gif'; // Assuming the cat-heart image is named "cat-heart.gif"
-    // Set alternative text for the image (for accessibility)
     catHeartImage.alt = 'Cat Heart';
+
     // When the cat-heart image is fully loaded, add it to the image container
-    catHeartImage.onload = function() {
+    catHeartImage.onload = function () {
         imageContainer.appendChild(catHeartImage);
+
         // Hide the options container
         document.getElementById('options').style.display = 'none';
+
+        // Create and add a hyperlink to the second page
+        var linkContainer = document.createElement('div');
+        linkContainer.style.marginTop = '20px'; // Add spacing
+
+        var hyperlink = document.createElement('a');
+        hyperlink.href = 'https://docs.google.com/forms/d/1DFOiIEhdXNXYqbwADReMUCNAJmU2zXlMi-gR3ui574k/edit';
+        hyperlink.textContent = 'Click here to fill out the form';
+        hyperlink.target = '_blank'; // Open in new tab
+        hyperlink.style.display = 'block';
+        hyperlink.style.fontSize = '18px';
+        hyperlink.style.fontWeight = 'bold';
+        hyperlink.style.textAlign = 'center';
+        hyperlink.style.textDecoration = 'none';
+        hyperlink.style.color = '#ff0000'; // Change color if needed
+
+        linkContainer.appendChild(hyperlink);
+        document.body.appendChild(linkContainer); // Append below the cat image
     };
 }
-
-// Display the cat.gif initially
-displayCat();
