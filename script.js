@@ -80,7 +80,7 @@ function displayCatHeart() {
         linkContainer.style.marginTop = '20px'; // Add spacing
 
         var hyperlink = document.createElement('a');
-        hyperlink.href = 'https://docs.google.com/forms/d/1DFOiIEhdXNXYqbwADReMUCNAJmU2zXlMi-gR3ui574k/edit';
+        hyperlink.href = 'https://forms.gle/eZXiL7LrAM2hkT8W6';
         hyperlink.textContent = 'Click here to fill out the form';
         hyperlink.target = '_blank'; // Open in new tab
         hyperlink.style.display = 'block';
