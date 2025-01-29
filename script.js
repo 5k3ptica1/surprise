@@ -93,4 +93,7 @@ function displayCatHeart() {
         linkContainer.appendChild(hyperlink);
         document.body.appendChild(linkContainer); // Append below the cat image
     };
-}
+
+window.onload = function() {
+    displayCat(); // Call the function when the page loads
+};
