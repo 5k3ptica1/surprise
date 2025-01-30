@@ -67,7 +67,7 @@ function displayCatHeart() {
 
         var hyperlink = document.createElement('a');
         hyperlink.href = 'https://forms.gle/4SgYYt7TXnHcfRyy7'; // Use public form link
-        hyperlink.textContent = 'Click here to fill out the form';
+        hyperlink.textContent = 'Click here!!!';
         hyperlink.target = '_blank';
         hyperlink.style.display = 'block';
         hyperlink.style.fontSize = '18px';
