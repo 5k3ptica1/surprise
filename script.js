@@ -41,7 +41,7 @@ function displayCat() {
     var catImage = document.createElement('img');
     catImage.src = 'cat.gif'; // Ensure this file is in the correct folder
     catImage.alt = 'Cute Cat';
-    catImage.width = 250;
+    catImage.width = 400;
     catImage.style.display = 'block';
     catImage.style.margin = '0 auto';
 
