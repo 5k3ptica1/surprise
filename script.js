@@ -56,7 +56,7 @@ function displayCatHeart() {
     var catHeartImage = document.createElement('img');
     catHeartImage.src = 'cat-heart.gif'; // Ensure this file is in the correct folder
     catHeartImage.alt = 'Cat Heart';
-    catHeartImage.width = 400;
+    catHeartImage.width = 300;
 
     catHeartImage.onload = function () {
         imageContainer.appendChild(catHeartImage);
